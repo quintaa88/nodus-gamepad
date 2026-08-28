@@ -1,0 +1,37 @@
+/* NODUS DualSense orange accent skin */
+/* Based on the original philipbry DualSense skin. */
+
+/* Orange accents only. The original DualSense artwork remains untouched. */
+.controller.dualsense .stick,
+.controller.dualsense .face,
+.controller.dualsense .dpad,
+.controller.dualsense .button,
+.controller.dualsense .abxy,
+.controller.dualsense .sticks,
+.controller.dualsense .touchpad {
+  filter: none !important;
+}
+
+/* Accent overlays are applied only to the interactive controls. */
+.controller.dualsense .stick,
+.controller.dualsense .face,
+.controller.dualsense .dpad {
+  background-color: #ff5a00 !important;
+}
+
+.controller.dualsense .stick.pressed,
+.controller.dualsense .face.pressed,
+.controller.dualsense .dpad.pressed {
+  background-color: #ff6a00 !important;
+}
+
+.controller.dualsense .button,
+.controller.dualsense .abxy {
+  color: #ff5a00 !important;
+  border-color: #ff5a00 !important;
+}
+
+/* Keep the viewer's original layout and artwork. */
+.controller.dualsense {
+  transform: none !important;
+}
