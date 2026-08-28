@@ -1,0 +1,243 @@
+/*
+ NODUS DUALSHOCK 4
+ FULL CUSTOM GAMEPAD VIEWER SKIN
+ Use with: ?p=1&css=<public-url>/nodus-ds4.css
+ This is a complete .custom skin, not an edit overlay.
+*/
+
+html, body {
+  background: transparent !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.controller.custom {
+  position: relative;
+  width: 1000px;
+  height: 650px;
+  margin-left: -500px;
+  margin-top: -325px;
+  background:
+    url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAwIiBoZWlnaHQ9IjY1MCIgdmlld0JveD0iMCAwIDEwMDAgNjUwIj4KPGRlZnM+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJib2R5IiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMxOTE5MTkiLz4KICAgIDxzdG9wIG9mZnNldD0iLjQ4IiBzdG9wLWNvbG9yPSIjMGQwZDBkIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNTA1MDUiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0iZWRnZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmY4YTE4Ii8+CiAgICA8c3RvcCBvZmZzZXQ9Ii41IiBzdG9wLWNvbG9yPSIjZmY1YjAwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM5YjI3MDAiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyYWRpYWxHcmFkaWVudCBpZD0ib3JhbmdlR2xvdyI+CiAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZjZiMDAiIHN0b3Atb3BhY2l0eT0iLjMyIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZjZiMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvcmFkaWFsR3JhZGllbnQ+CiAgPGZpbHRlciBpZD0iZ2xvdyI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNSIgcmVzdWx0PSJiIi8+PGZlTWVyZ2U+PGZlTWVyZ2VOb2RlIGluPSJiIi8+PGZlTWVyZ2VOb2RlIGluPSJTb3VyY2VHcmFwaGljIi8+PC9mZU1lcmdlPjwvZmlsdGVyPgo8L2RlZnM+Cgo8IS0tIHNpbGhvdWV0dGUgLS0+CjxwYXRoIGQ9Ik05MyAxNzkgQzExOCAxMjMgMTkwIDgzIDI3OSA3MiBMNzIxIDcyIEM4MTAgODMgODgyIDEyMyA5MDcgMTc5CiBDOTM0IDI0MCA5NTUgMzQxIDk1OCA0NDIgQzk2MCA1MDEgOTM1IDU1OCA4OTEgNTg2CiBDODU1IDYwOSA4MjMgNTg5IDc5OCA1NTEgTDcyNCA0MzggQzcwOCA0MTQgNjg1IDQwMSA2NTUgNDAxCiBMMzQ1IDQwMSBDMzE1IDQwMSAyOTIgNDE0IDI3NiA0MzggTDIwMiA1NTEgQzE3NyA1ODkgMTQ1IDYwOSAxMDkgNTg2CiBDNjUgNTU4IDQwIDUwMSA0MiA0NDIgQzQ1IDM0MSA2NiAyNDAgOTMgMTc5WiIKIGZpbGw9InVybCgjYm9keSkiIHN0cm9rZT0iIzI1MjUyNSIgc3Ryb2tlLXdpZHRoPSIxMCIvPgoKPCEtLSBvcmFuZ2UgcGVyaW1ldGVyIC0tPgo8cGF0aCBkPSJNMTA0IDE5MCBDMTMyIDEzNyAxOTQgMTAyIDI3NCA5MyBMNzI2IDkzIEM4MDYgMTAyIDg2OCAxMzcgODk2IDE5MAogQzkxOCAyMzkgOTM2IDM0MyA5MzkgNDQwIEM5NDEgNDkyIDkyMCA1MzggODg2IDU2MQogQzg2MiA1NzcgODQxIDU1OCA4MjEgNTI4IEw3NTAgNDIxIEM3MjkgMzkwIDY5OSAzNzcgNjYwIDM3NwogTDM0MCAzNzcgQzMwMSAzNzcgMjcxIDM5MCAyNTAgNDIxIEwxNzkgNTI4IEMxNTkgNTU4IDEzOCA1NzcgMTE0IDU2MQogQzgwIDUzOCA1OSA0OTIgNjEgNDQwIEM2NCAzNDMgODIgMjM5IDEwNCAxOTBaIgogZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2VkZ2UpIiBzdHJva2Utd2lkdGg9IjQiIG9wYWNpdHk9Ii45NSIvPgoKPCEtLSBjaXJjdWl0IHRyYWNlcyAtLT4KPGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmY2OTAwIiBzdHJva2Utd2lkdGg9IjMiIG9wYWNpdHk9Ii42MiI+CiA8cGF0aCBkPSJNMTIwIDI0NiBIMjI1IEwyNjAgMjExIEgzMzIiLz4KIDxwYXRoIGQ9Ik0xMDMgMzAwIEgxODAgTDIxNCAyNjYiLz4KIDxwYXRoIGQ9Ik0xNDggNDc1IEgyMDIgTDIzMSA0NDYiLz4KIDxwYXRoIGQ9Ik04ODAgMjQ2IEg3NzUgTDc0MCAyMTEgSDY2OCIvPgogPHBhdGggZD0iTTg5NyAzMDAgSDgyMCBMNzg2IDI2NiIvPgogPHBhdGggZD0iTTg1MiA0NzUgSDc5OCBMNzY5IDQ0NiIvPgo8L2c+CjxnIGZpbGw9IiNmZjY5MDAiIGZpbHRlcj0idXJsKCNnbG93KSI+CiA8Y2lyY2xlIGN4PSIxMjAiIGN5PSIyNDYiIHI9IjUiLz48Y2lyY2xlIGN4PSIxODAiIGN5PSIzMDAiIHI9IjUiLz48Y2lyY2xlIGN4PSIxNDgiIGN5PSI0NzUiIHI9IjUiLz4KIDxjaXJjbGUgY3g9Ijg4MCIgY3k9IjI0NiIgcj0iNSIvPjxjaXJjbGUgY3g9IjgyMCIgY3k9IjMwMCIgcj0iNSIvPjxjaXJjbGUgY3g9Ijg1MiIgY3k9IjQ3NSIgcj0iNSIvPgo8L2c+Cgo8IS0tIGNlbnRlciBOT0RVUyAtLT4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTAwIDE4MCkiPgogPHJlY3QgeD0iLTgyIiB5PSItMzgiIHdpZHRoPSIxNjQiIGhlaWdodD0iNzYiIHJ4PSIxOCIgZmlsbD0iIzA5MDkwOSIgc3Ryb2tlPSIjZmY2OTAwIiBzdHJva2Utd2lkdGg9IjIiLz4KIDxwYXRoIGQ9Ik0tNDIgLTIyaDIwdjIwaC0yMHogTS0xOCAtMjJoMjB2NDRoLTIweiBNLTQyIDJoMjB2MjBoLTIweiIgZmlsbD0iI2ZmNjkwMCIvPgogPHRleHQgeD0iOSIgeT0iOCIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iNzAwIiBsZXR0ZXItc3BhY2luZz0iNCI+Tk9EVVM8L3RleHQ+CjwvZz4KCjwhLS0gc3VidGxlIGdyaXAgdGV4dHVyZSAtLT4KPGcgc3Ryb2tlPSIjMzQzNDM0IiBzdHJva2Utd2lkdGg9IjIiIG9wYWNpdHk9Ii41NSI+CiA8cGF0aCBkPSJNOTAgNDY4bDcwIDcwIi8+PHBhdGggZD0iTTk4IDQ1MWw4MiA4MiIvPjxwYXRoIGQ9Ik05MTAgNDY4bC03MCA3MCIvPjxwYXRoIGQ9Ik05MDIgNDUxbC04MiA4MiIvPgo8L2c+Cgo8IS0tIGNlbnRlciBicmlkZ2UgLS0+CjxwYXRoIGQ9Ik0zNjUgMTEyIEg2MzUgTDY3MCAxNTAgSDMzMFoiIGZpbGw9IiMxMTEiIHN0cm9rZT0iIzJhMmEyYSIgc3Ryb2tlLXdpZHRoPSIzIi8+CjxwYXRoIGQ9Ik0zOTEgMTI2IEg2MDkiIHN0cm9rZT0iI2ZmNjkwMCIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIuOCIvPgo8L3N2Zz4=")
+    no-repeat center center / 100% 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.custom.disconnected div {
+  display: none;
+}
+
+/* TRIGGERS */
+.custom .triggers {
+  position: absolute;
+  left: 250px;
+  top: 63px;
+  width: 500px;
+  height: 82px;
+}
+.custom .trigger {
+  position: absolute;
+  top: 0;
+  width: 112px;
+  height: 72px;
+  border: 3px solid #343434;
+  border-radius: 28px 28px 18px 18px;
+  background: linear-gradient(#121212,#050505);
+  box-shadow: inset 0 0 0 1px #000;
+  opacity: 0;
+  transition: .08s;
+}
+.custom .trigger.left { left: 0; }
+.custom .trigger.right { right: 0; }
+.custom .trigger.pressed {
+  opacity: 1;
+  border-color: #ff6900;
+  box-shadow: 0 0 16px rgba(255,105,0,.55), inset 0 0 14px rgba(255,105,0,.16);
+}
+
+/* BUMPERS */
+.custom .bumpers {
+  position: absolute;
+  left: 242px;
+  top: 138px;
+  width: 516px;
+  height: 40px;
+}
+.custom .bumper {
+  width: 205px;
+  height: 31px;
+  border-radius: 12px;
+  background: #0b0b0b;
+  border: 2px solid #2e2e2e;
+  opacity: 0;
+}
+.custom .bumper.left { float:left; }
+.custom .bumper.right { float:right; }
+.custom .bumper.pressed {
+  opacity: 1;
+  border-color: #ff6900;
+  box-shadow: 0 0 12px rgba(255,105,0,.55);
+}
+
+/* TOUCHPAD */
+.custom .touchpad {
+  position: absolute;
+  left: 377px;
+  top: 124px;
+  width: 246px;
+  height: 126px;
+  border-radius: 18px;
+  background: linear-gradient(145deg,#171717,#070707);
+  border: 2px solid #2d2d2d;
+  box-shadow: inset 0 0 24px #000;
+}
+.custom .touchpad::after {
+  content: "NODUS";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: rgba(255,255,255,.22);
+  letter-spacing: 6px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.custom .touchpad.pressed {
+  border-color: #ff6900;
+  box-shadow: 0 0 18px rgba(255,105,0,.35), inset 0 0 24px #000;
+}
+
+/* PS / SHARE / OPTIONS */
+.custom .meta {
+  position:absolute;
+  left: 480px;
+  top: 260px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background:#090909;
+  border:2px solid #303030;
+}
+.custom .meta.pressed {
+  border-color:#ff6900;
+  box-shadow:0 0 13px rgba(255,105,0,.65);
+}
+.custom .arrows {
+  position:absolute;
+  left:355px;
+  top:255px;
+  width:290px;
+  height:50px;
+}
+.custom .back, .custom .start {
+  position:absolute;
+  top:0;
+  width:46px;
+  height:42px;
+  border-radius:10px;
+  background:#0a0a0a;
+  border:2px solid #303030;
+  opacity:1;
+}
+.custom .back { left:0; }
+.custom .start { right:0; }
+.custom .back.pressed, .custom .start.pressed {
+  border-color:#ff6900;
+  box-shadow:0 0 12px rgba(255,105,0,.55);
+}
+
+/* FACE BUTTONS */
+.custom .abxy {
+  position:absolute;
+  left:704px;
+  top:244px;
+  width:180px;
+  height:180px;
+}
+.custom .button {
+  position:absolute;
+  width:54px;
+  height:54px;
+  border-radius:50%;
+  background:#090909;
+  border:3px solid #ff6900;
+  box-shadow: inset 0 0 0 2px #1d1d1d, 0 0 5px rgba(255,105,0,.18);
+  color:#fff;
+  font-weight:800;
+}
+.custom .button::after {
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  font-size:20px;
+}
+.custom .a { left:63px; bottom:0; }
+.custom .b { right:0; top:63px; }
+.custom .x { left:0; top:63px; }
+.custom .y { left:63px; top:0; }
+.custom .a::after { content:"✕"; }
+.custom .b::after { content:"○"; }
+.custom .x::after { content:"□"; }
+.custom .y::after { content:"△"; }
+.custom .button.pressed {
+  background:#ff6900;
+  color:#050505;
+  box-shadow:0 0 20px rgba(255,105,0,.85), inset 0 0 10px rgba(255,255,255,.15);
+  transform:scale(.96);
+}
+
+/* D-PAD */
+.custom .dpad {
+  position:absolute;
+  left:226px;
+  top:266px;
+  width:126px;
+  height:126px;
+}
+.custom .face {
+  position:absolute;
+  background:#0a0a0a;
+  border:2px solid #303030;
+}
+.custom .face.up, .custom .face.down { width:38px; height:53px; left:44px; }
+.custom .face.left, .custom .face.right { width:53px; height:38px; top:44px; }
+.custom .face.up { top:0; border-radius:9px 9px 3px 3px; }
+.custom .face.down { bottom:0; border-radius:3px 3px 9px 9px; }
+.custom .face.left { left:0; border-radius:9px 3px 3px 9px; }
+.custom .face.right { right:0; border-radius:3px 9px 9px 3px; }
+.custom .face.pressed {
+  background:#ff6900;
+  border-color:#ff9a42;
+  box-shadow:0 0 15px rgba(255,105,0,.7);
+}
+
+/* STICKS */
+.custom .sticks {
+  position:absolute;
+  left:350px;
+  top:340px;
+  width:300px;
+  height:130px;
+}
+.custom .stick {
+  position:absolute;
+  width:96px;
+  height:96px;
+  border-radius:50%;
+  background:radial-gradient(circle at 40% 35%,#292929,#090909 65%);
+  border:4px solid #ff6900;
+  box-shadow:0 0 8px rgba(255,105,0,.28), inset 0 0 14px #000;
+}
+.custom .stick.left { left:0; top:0; }
+.custom .stick.right { right:0; bottom:0; }
+.custom .stick.pressed {
+  border-color:#ff9a42;
+  box-shadow:0 0 20px rgba(255,105,0,.78), inset 0 0 16px #000;
+}
+
+/* PLAYER QUADRANT */
+.custom .quadrant {
+  display:none;
+}
