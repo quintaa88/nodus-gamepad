@@ -1,0 +1,26 @@
+/* NODUS DualSense orange overlay
+   Loaded after the original DualSense skin.
+   The original artwork stays intact; only control layers receive the orange accent. */
+
+/* Orange accent used by NODUS */
+:root { --nodus-orange: #ff5a00; }
+
+/* Common Gamepad Viewer DualSense control layers */
+.ds5 .stick,
+.ds5 .dpad,
+.ds5 .face {
+  background-color: var(--nodus-orange) !important;
+}
+
+.ds5 .stick,
+.ds5 .dpad,
+.ds5 .face,
+.ds5 .button,
+.ds5 .abxy {
+  border-color: var(--nodus-orange) !important;
+}
+
+.ds5 .button,
+.ds5 .abxy {
+  color: var(--nodus-orange) !important;
+}
