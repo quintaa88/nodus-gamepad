@@ -1,0 +1,16 @@
+/* NODUS DualSense orange accent skin */
+/* Native DualSense artwork is preserved. Only the interactive control accents are orange. */
+
+/* orange control accent */
+.controller.ds5 .stick,
+.controller.ds5 .dpad,
+.controller.ds5 .face {
+  background-color: #ff5a00 !important;
+  border-color: #ff5a00 !important;
+}
+
+.controller.ds5 .button,
+.controller.ds5 .abxy {
+  color: #ff5a00 !important;
+  border-color: #ff5a00 !important;
+}
