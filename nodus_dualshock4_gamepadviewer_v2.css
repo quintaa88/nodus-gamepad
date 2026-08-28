@@ -1,0 +1,152 @@
+/*
+ NODUS // DUALSHOCK 4 // GAMEPAD VIEWER
+ EDIT CSS - overlays the native PS4 skin.
+ IMPORTANT: this file intentionally does NOT redefine the controller
+ layout. Gamepad Viewer's native .ds4 CSS remains in charge of geometry.
+*/
+
+html, body {
+    background: transparent !important;
+    background-color: transparent !important;
+    overflow: hidden !important;
+}
+
+/* Keep the native DS4 size/position/layout intact */
+.controller.ds4 {
+    position: relative !important;
+    isolation: isolate !important;
+}
+
+/* NODUS circuit layer */
+.controller.ds4::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none !important;
+
+    background:
+        /* left nodes */
+        radial-gradient(circle at 18.5% 30%, #ff7100 0 2px, rgba(255,113,0,.42) 2.5px, transparent 7px),
+        radial-gradient(circle at 26% 41%, #ff7100 0 1.7px, rgba(255,113,0,.35) 2.5px, transparent 7px),
+        radial-gradient(circle at 34% 25%, #ff7100 0 1.7px, rgba(255,113,0,.35) 2.5px, transparent 7px),
+
+        /* right nodes */
+        radial-gradient(circle at 66% 25%, #ff7100 0 1.7px, rgba(255,113,0,.35) 2.5px, transparent 7px),
+        radial-gradient(circle at 74% 41%, #ff7100 0 1.7px, rgba(255,113,0,.35) 2.5px, transparent 7px),
+        radial-gradient(circle at 81.5% 30%, #ff7100 0 2px, rgba(255,113,0,.42) 2.5px, transparent 7px),
+
+        /* thin circuit traces */
+        linear-gradient(27deg,
+            transparent 0 18.5%,
+            rgba(255,113,0,.52) 18.6% 18.8%,
+            transparent 18.9% 25%,
+            rgba(255,113,0,.34) 25.1% 25.3%,
+            transparent 25.4%),
+
+        linear-gradient(153deg,
+            transparent 0 26%,
+            rgba(255,113,0,.40) 26.1% 26.3%,
+            transparent 26.4% 34%,
+            rgba(255,113,0,.28) 34.1% 34.3%,
+            transparent 34.4%),
+
+        linear-gradient(153deg,
+            transparent 0 66%,
+            rgba(255,113,0,.40) 66.1% 66.3%,
+            transparent 66.4% 74%,
+            rgba(255,113,0,.28) 74.1% 74.3%,
+            transparent 74.4%),
+
+        linear-gradient(27deg,
+            transparent 0 75%,
+            rgba(255,113,0,.52) 75.1% 75.3%,
+            transparent 75.4%),
+
+        /* subtle dark glass shading */
+        radial-gradient(ellipse at center,
+            transparent 0 45%,
+            rgba(0,0,0,.04) 65%,
+            rgba(0,0,0,.18) 100%);
+
+    opacity: .72;
+    mix-blend-mode: screen;
+}
+
+/* Very subtle orange perimeter */
+.controller.ds4::after {
+    content: "";
+    position: absolute;
+    inset: 34px 42px 27px;
+    z-index: 1;
+    pointer-events: none !important;
+
+    border: 1px solid rgba(255,113,0,.18);
+    border-radius: 27% 27% 35% 35% / 32% 32% 40% 40%;
+    box-shadow:
+        0 0 8px rgba(255,113,0,.07),
+        inset 0 0 14px rgba(255,113,0,.025);
+}
+
+/*
+ DO NOT set position on .controller.ds4 > div.
+ Gamepad Viewer's native stylesheet positions those elements
+ absolutely. Changing their position property breaks the skin.
+*/
+
+/* NODUS text on the touchpad, while preserving native touchpad behavior */
+.ds4 .touchpad::after {
+    content: "NODUS";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none !important;
+
+    color: rgba(255,255,255,.68);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-shadow: 0 0 7px rgba(255,113,0,.22);
+}
+
+.ds4 .touchpad.pressed::after {
+    color: #ff7100;
+    text-shadow:
+        0 0 5px rgba(255,113,0,.9),
+        0 0 12px rgba(255,113,0,.42);
+}
+
+/* NODUS orange reaction on native pressed states */
+.ds4 .button.pressed,
+.ds4 .face.pressed,
+.ds4 .bumper.pressed,
+.ds4 .trigger.pressed,
+.ds4 .back.pressed,
+.ds4 .start.pressed,
+.ds4 .meta.pressed {
+    filter:
+        sepia(1)
+        saturate(7)
+        hue-rotate(335deg)
+        brightness(1.12)
+        drop-shadow(0 0 3px rgba(255,113,0,.9))
+        drop-shadow(0 0 8px rgba(255,113,0,.42));
+}
+
+/* Sticks: native geometry remains untouched */
+.ds4 .stick.pressed {
+    filter:
+        sepia(1)
+        saturate(7)
+        hue-rotate(335deg)
+        brightness(1.08)
+        drop-shadow(0 0 4px rgba(255,113,0,.95))
+        drop-shadow(0 0 10px rgba(255,113,0,.42));
+}
+
+/* Player indicator */
+.ds4 .quadrant {
+    filter: drop-shadow(0 0 4px rgba(255,113,0,.45));
+}
