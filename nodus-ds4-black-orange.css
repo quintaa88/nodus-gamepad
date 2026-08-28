@@ -3,27 +3,35 @@
    Based on the working Purple/White DS4 skin structure.
 */
 
-/* Keep Gamepad Viewer's native DS4 size and centering. */
+/* Gamepad Viewer applies the .half layout to the DS4 in some configurations.
+   The native DS4 skin defines .ds4.half with a -300px top margin, which makes
+   the controller appear clipped at the top. Cancel that offset. */
+.controller.ds4.white.half,
+.controller.ds4.white.edit,
 .controller.ds4.white {
+  margin-top: 0 !important;
+}
+
+/* Keep the native DS4 dimensions. */
+.controller.ds4.white {
+  height: 598px !important;
+  width: 806px !important;
   background-image: none !important;
   position: relative !important;
 }
 
-/* Recolor the original Purple/White controller artwork:
-   white -> black
-   purple -> NODUS orange
-*/
+/* Recolored Purple/White base artwork. */
 .controller.ds4.white::before {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
-  background: url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/base.svgz") center center / contain no-repeat !important;
+  background: url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/base.svgz") center center / 100% 100% no-repeat !important;
   pointer-events: none !important;
   z-index: 0 !important;
-  filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='nodus'%3E%3CfeColorMatrix type='matrix' values='4.903846 -4.903846 0 0 0 2.019231 -2.019231 0 0 0 0 0 0 0 0 0 0 0 1 0'/%3E%3C/filter%3E%3C/svg%3E#nodus") !important;
+  filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='nodus'%3E%3CfeColorMatrix type='matrix' values='4.903846 -4.903846 0 0 0 2.019231 -2.019231 0 0 0 0 0 0 0 0 0 1 0'/%3E%3C/filter%3E%3C/svg%3E#nodus") !important;
 }
 
-/* Keep all live Gamepad Viewer controls above the artwork. */
+/* Keep live controls above the artwork. */
 .controller.ds4.white .triggers,
 .controller.ds4.white .bumpers,
 .controller.ds4.white .touchpad,
@@ -32,19 +40,8 @@
 .controller.ds4.white .abxy,
 .controller.ds4.white .sticks,
 .controller.ds4.white .dpad {
-  position: relative !important;
+  position: absolute !important;
   z-index: 5 !important;
-}
-
-/* Purple/White control artwork, recolored with the same exact mapping. */
-.controller.ds4.white .stick,
-.controller.ds4.white .face,
-.controller.ds4.white .bumper,
-.controller.ds4.white .trigger,
-.controller.ds4.white .touchpad.pressed,
-.controller.ds4.white .back,
-.controller.ds4.white .start {
-  filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='nodus'%3E%3CfeColorMatrix type='matrix' values='4.903846 -4.903846 0 0 0 2.019231 -2.019231 0 0 0 0 0 0 0 0 0 0 0 1 0'/%3E%3C/filter%3E%3C/svg%3E#nodus") !important;
 }
 
 .controller.ds4.white .stick {
