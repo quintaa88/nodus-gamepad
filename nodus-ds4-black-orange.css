@@ -1,103 +1,105 @@
-/* NODUS DS4 BLACK / ORANGE - Gamepad Viewer edit CSS */
-/* Built as an EDIT skin: keeps Gamepad Viewer's native DS4 DOM/input handling. */
+/* NODUS DS4 BLACK / ORANGE
+   Built as an EDIT skin for Gamepad Viewer.
+   Based on the working Purple/White DS4 skin structure.
+*/
 
-.controller.ds4{
-  position:relative!important;
-  width:806px!important;
-  height:599px!important;
-  background-image:none!important;
-}
-
-/* Purple/White DS4 artwork recolored to NODUS black/orange. */
-.controller.ds4::before{
-  content:""!important;
-  position:absolute!important;
-  inset:0!important;
-  width:806px!important;
-  height:599px!important;
-  background:url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/base.svgz") center/806px 599px no-repeat!important;
-  pointer-events:none!important;
-  z-index:0!important;
-  filter:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='nodus'%3E%3CfeColorMatrix type='matrix' values='-0.3507 -1.6397 2.0556 0 0 -0.1232 -0.6250 0.8135 0 0 0.0360 0.0853 -0.0560 0 0 0 0 0 1 0'/%3E%3C/filter%3E%3C/svg%3E#nodus")!important;
+/* Keep Gamepad Viewer's native DS4 size and centering. */
+.controller.ds4.white {
+  background-image: none !important;
+  position: relative !important;
 }
 
-/* Native controls stay above the recolored body. */
-.controller.ds4 .triggers,
-.controller.ds4 .bumpers,
-.controller.ds4 .touchpad,
-.controller.ds4 .meta,
-.controller.ds4 .arrows,
-.controller.ds4 .abxy,
-.controller.ds4 .sticks,
-.controller.ds4 .dpad{
-  z-index:5!important;
+/* Recolor the original Purple/White controller artwork:
+   white -> black
+   purple -> NODUS orange
+*/
+.controller.ds4.white::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/base.svgz") center center / contain no-repeat !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+  filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='nodus'%3E%3CfeColorMatrix type='matrix' values='4.903846 -4.903846 0 0 0 2.019231 -2.019231 0 0 0 0 0 0 0 0 0 0 0 1 0'/%3E%3C/filter%3E%3C/svg%3E#nodus") !important;
 }
 
-/* Use the Purple/White skin's control artwork and turn purple -> NODUS orange. */
-.controller.ds4 .stick,
-.controller.ds4 .face,
-.controller.ds4 .bumper,
-.controller.ds4 .trigger,
-.controller.ds4 .touchpad.pressed,
-.controller.ds4 .back,
-.controller.ds4 .start{
-  filter:hue-rotate(124deg) saturate(1.65) brightness(1.08)!important;
+/* Keep all live Gamepad Viewer controls above the artwork. */
+.controller.ds4.white .triggers,
+.controller.ds4.white .bumpers,
+.controller.ds4.white .touchpad,
+.controller.ds4.white .meta,
+.controller.ds4.white .arrows,
+.controller.ds4.white .abxy,
+.controller.ds4.white .sticks,
+.controller.ds4.white .dpad {
+  position: relative !important;
+  z-index: 5 !important;
 }
 
-.controller.ds4 .stick{
-  background-image:url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/sticks.svgz")!important;
-}
-.controller.ds4 .face{
-  background-image:url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/dpad.svgz")!important;
-}
-.controller.ds4 .bumper{
-  background-image:url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/bumper.svgz")!important;
-}
-.controller.ds4 .trigger{
-  background-image:url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/triggers.svgz")!important;
-}
-.controller.ds4 .touchpad.pressed{
-  background-image:url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/touchpad.svgz")!important;
-}
-.controller.ds4 .back,
-.controller.ds4 .start{
-  background-image:url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/start.svgz")!important;
+/* Purple/White control artwork, recolored with the same exact mapping. */
+.controller.ds4.white .stick,
+.controller.ds4.white .face,
+.controller.ds4.white .bumper,
+.controller.ds4.white .trigger,
+.controller.ds4.white .touchpad.pressed,
+.controller.ds4.white .back,
+.controller.ds4.white .start {
+  filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='nodus'%3E%3CfeColorMatrix type='matrix' values='4.903846 -4.903846 0 0 0 2.019231 -2.019231 0 0 0 0 0 0 0 0 0 0 0 1 0'/%3E%3C/filter%3E%3C/svg%3E#nodus") !important;
 }
 
-/* NODUS wordmark on the touchpad. */
-.controller.ds4 .touchpad::after{
-  content:"NODUS"!important;
-  position:absolute!important;
-  left:50%!important;
-  top:50%!important;
-  transform:translate(-50%,-50%)!important;
-  color:#ff6900!important;
-  font:700 12px Arial,sans-serif!important;
-  letter-spacing:5px!important;
-  text-shadow:0 0 10px rgba(255,105,0,.35)!important;
-  pointer-events:none!important;
+.controller.ds4.white .stick {
+  background-image: url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/sticks.svgz") !important;
 }
 
-/* Orange feedback when an input is pressed. */
-.controller.ds4 .button.pressed,
-.controller.ds4 .face.pressed,
-.controller.ds4 .stick.pressed,
-.controller.ds4 .bumper.pressed,
-.controller.ds4 .trigger.pressed,
-.controller.ds4 .back.pressed,
-.controller.ds4 .start.pressed,
-.controller.ds4 .meta.pressed,
-.controller.ds4 .touchpad.pressed{
-  box-shadow:0 0 18px rgba(255,105,0,.72)!important;
+.controller.ds4.white .face {
+  background-image: url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/dpad.svgz") !important;
 }
 
-.controller.ds4 .meta.pressed{
-  border-color:#ff6900!important;
+.controller.ds4.white .bumper {
+  background-image: url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/bumper.svgz") !important;
 }
 
-.controller.ds4.disconnected{
-  background-image:none!important;
+.controller.ds4.white .trigger {
+  background-image: url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/triggers.svgz") !important;
 }
-.controller.ds4.disconnected::before{
-  opacity:.9!important;
+
+.controller.ds4.white .touchpad.pressed {
+  background-image: url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/touchpad.svgz") !important;
+}
+
+.controller.ds4.white .back,
+.controller.ds4.white .start {
+  background-image: url("https://uncleclapton.github.io/GamepadViewer-PurpleWhiteSkin/svgs/start.svgz") !important;
+}
+
+/* NODUS branding. */
+.controller.ds4.white .touchpad::after {
+  content: "NODUS" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: #ff6900 !important;
+  font: 700 12px Arial, sans-serif !important;
+  letter-spacing: 4px !important;
+  text-shadow: 0 0 8px rgba(255, 105, 0, .28) !important;
+  pointer-events: none !important;
+  z-index: 10 !important;
+}
+
+/* Orange input feedback. */
+.controller.ds4.white .button.pressed,
+.controller.ds4.white .face.pressed,
+.controller.ds4.white .stick.pressed,
+.controller.ds4.white .bumper.pressed,
+.controller.ds4.white .trigger.pressed,
+.controller.ds4.white .back.pressed,
+.controller.ds4.white .start.pressed,
+.controller.ds4.white .meta.pressed,
+.controller.ds4.white .touchpad.pressed {
+  box-shadow: 0 0 18px rgba(255, 105, 0, .72) !important;
+}
+
+.controller.ds4.white .meta.pressed {
+  border-color: #ff6900 !important;
 }
