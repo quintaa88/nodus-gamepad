@@ -1,2 +1,148 @@
-/* NODUS DS4 REAL GAMEPAD VIEWER SKIN */
-html,body{margin:0!important;padding:0!important;background:transparent!important;overflow:hidden!important}.controller.ds4{position:relative!important;width:806px!important;height:599px!important;margin:0!important;background:transparent!important;font-family:Arial,Helvetica,sans-serif!important}.controller.ds4:before{content:"";position:absolute;z-index:0;left:18px;top:54px;width:770px;height:515px;background:#ff6900;clip-path:polygon(13% 0,87% 0,93% 9%,96% 22%,98% 39%,99% 63%,96% 83%,91% 96%,84% 100%,76% 98%,70% 91%,65% 77%,61% 68%,39% 68%,35% 77%,30% 91%,24% 98%,16% 100%,9% 96%,4% 83%,1% 63%,2% 39%,4% 22%,7% 9%)}.controller.ds4:after{content:"";position:absolute;z-index:1;left:24px;top:60px;width:758px;height:503px;background:linear-gradient(150deg,#1b1b1b,#080808 58%,#050505);clip-path:polygon(13% 0,87% 0,93% 9%,96% 22%,98% 39%,99% 63%,96% 83%,91% 96%,84% 100%,76% 98%,70% 91%,65% 77%,61% 68%,39% 68%,35% 77%,30% 91%,24% 98%,16% 100%,9% 96%,4% 83%,1% 63%,2% 39%,4% 22%,7% 9%);box-shadow:inset 0 0 45px #000}.controller.ds4>div{z-index:5}.ds4 .triggers{position:absolute;left:109px;top:18px;width:588px;height:90px}.ds4 .trigger{width:99px;height:90px;background:#0b0b0b;border:2px solid #303030;border-radius:28px 28px 12px 12px;box-sizing:border-box;opacity:0}.ds4 .trigger.left{float:left}.ds4 .trigger.right{float:right}.ds4 .trigger.pressed{opacity:1;border-color:#ff6900;box-shadow:0 0 16px rgba(255,105,0,.75),inset 0 0 14px rgba(255,105,0,.14)}.ds4 .bumpers{position:absolute;width:588px;height:23px;left:109px;top:92px}.ds4 .bumper{width:99px;height:23px;background:#090909;border:2px solid #303030;border-radius:7px;opacity:1;box-sizing:border-box}.ds4 .bumper.left{float:left}.ds4 .bumper.right{float:right}.ds4 .bumper.pressed{border-color:#ff6900;box-shadow:0 0 13px rgba(255,105,0,.65)}.ds4 .touchpad{width:262px;height:151px;position:absolute;left:272px;top:122px;border-radius:16px;background:radial-gradient(circle,#181818,#070707 72%);border:2px solid #2d2d2d;box-shadow:inset 0 0 25px #000;box-sizing:border-box}.ds4 .touchpad:after{content:"NODUS";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#ff6900;font:700 12px Arial,sans-serif;letter-spacing:5px;opacity:.8}.ds4 .touchpad.pressed{border-color:#ff6900;box-shadow:0 0 18px rgba(255,105,0,.38),inset 0 0 25px #000}.ds4 .meta{width:42px;height:42px;position:absolute;left:382px;bottom:216px;border-radius:50%;background:#080808;border:2px solid #303030;box-sizing:border-box}.ds4 .meta:after{content:"N";position:absolute;inset:0;display:grid;place-items:center;color:#ff6900;font-weight:800}.ds4 .meta.pressed{border-color:#ff6900;box-shadow:0 0 18px rgba(255,105,0,.8)}.ds4 .arrows{position:absolute;width:345px;height:46px;top:131.7px;left:230px}.ds4 .back,.ds4 .start{width:28px;height:46px;background:#090909;border:2px solid #303030;border-radius:9px;box-sizing:border-box;opacity:1}.ds4 .back{float:left}.ds4 .start{float:right}.ds4 .back.pressed,.ds4 .start.pressed{border-color:#ff6900;box-shadow:0 0 13px rgba(255,105,0,.6);background:#151515}.ds4 .abxy{position:absolute;width:170px;height:171px;top:159px;left:567px}.ds4 .button{position:absolute;width:55px;height:55px;background:#090909;border:3px solid #ff6900;border-radius:100%;box-sizing:border-box;color:#eee;font:700 21px Arial,sans-serif;text-align:center;line-height:49px}.ds4 .a{bottom:2px;left:57px}.ds4 .b{top:58px;right:2px}.ds4 .x{left:2px;top:57px}.ds4 .y{top:2px;left:57px}.ds4 .a:after{content:"✕"}.ds4 .b:after{content:"○"}.ds4 .x:after{content:"□"}.ds4 .y:after{content:"△"}.ds4 .button.pressed{background:#ff6900;color:#080808;box-shadow:0 0 20px rgba(255,105,0,.95);transform:scale(.95)}.ds4 .sticks{position:absolute;width:341px;height:105px;top:308px;left:237.5px}.ds4 .stick{position:absolute;height:94px;width:94px;border-radius:50%;background:radial-gradient(circle at 38% 30%,#303030,#090909 68%);border:4px solid #ff6900;box-sizing:border-box}.ds4 .stick.left{top:0;left:0}.ds4 .stick.right{top:0;left:247px}.ds4 .stick.pressed{border-color:#ff9d45;box-shadow:0 0 18px rgba(255,105,0,.8)}.ds4 .dpad{position:absolute;width:125px;height:126px;top:181px;left:92px}.ds4 .face{position:absolute;background:#090909;border:2px solid #303030;box-sizing:border-box}.ds4 .face.up,.ds4 .face.down{width:36px;height:52px}.ds4 .face.left,.ds4 .face.right{width:52px;height:36px}.ds4 .face.up{left:44px;top:-5px;border-radius:9px 9px 3px 3px}.ds4 .face.down{left:44px;bottom:-4px;border-radius:3px 3px 9px 9px}.ds4 .face.left{top:45px;left:-5px;border-radius:9px 3px 3px 9px}.ds4 .face.right{top:45px;right:-4px;border-radius:3px 9px 9px 3px}.ds4 .face.pressed{background:#ff6900;border-color:#ff9d45;box-shadow:0 0 15px rgba(255,105,0,.8)}.ds4 .wheel{display:none!important}.ds4.disconnected div{opacity:1!important}
+/* NODUS DS4 - Gamepad Viewer EDIT CSS
+   Built on the native PlayStation 4 skin.
+   The native .ds4 DOM remains responsible for input state and positioning. */
+html,body{margin:0!important;padding:0!important;background:transparent!important;overflow:hidden!important}
+
+/* Gamepad Viewer applies .edit to the controller for editcss= files. */
+.controller.edit.ds4{
+  width:806px!important;
+  height:598px!important;
+  position:relative!important;
+  background:transparent url("https://quintaa88.github.io/nodus-gamepad/skins/ds4/nodus/assets/base.svg") center center/806px 599px no-repeat!important;
+}
+
+/* Keep the native DS4 DOM controls, but remove their original visual body. */
+.controller.edit.ds4 .triggers,
+.controller.edit.ds4 .bumpers,
+.controller.edit.ds4 .touchpad,
+.controller.edit.ds4 .meta,
+.controller.edit.ds4 .arrows,
+.controller.edit.ds4 .abxy,
+.controller.edit.ds4 .sticks,
+.controller.edit.ds4 .dpad{z-index:10!important}
+
+/* Triggers */
+.controller.edit.ds4 .trigger{
+  background:#0a0a0a!important;
+  border:2px solid #333!important;
+  border-radius:28px 28px 12px 12px!important;
+  box-sizing:border-box!important;
+  opacity:0!important;
+}
+.controller.edit.ds4 .trigger.pressed{
+  opacity:1!important;
+  border-color:#ff6900!important;
+  box-shadow:0 0 18px rgba(255,105,0,.8),inset 0 0 12px rgba(255,105,0,.15)!important;
+}
+
+/* Bumpers */
+.controller.edit.ds4 .bumper{
+  background:#090909!important;
+  border:2px solid #333!important;
+  box-sizing:border-box!important;
+  opacity:1!important;
+}
+.controller.edit.ds4 .bumper.pressed{
+  border-color:#ff6900!important;
+  box-shadow:0 0 14px rgba(255,105,0,.7)!important;
+}
+
+/* Touchpad */
+.controller.edit.ds4 .touchpad{
+  background:linear-gradient(145deg,#151515,#070707)!important;
+  border:2px solid #292929!important;
+  border-radius:15px!important;
+  box-shadow:inset 0 0 22px #000!important;
+  box-sizing:border-box!important;
+}
+.controller.edit.ds4 .touchpad:after{
+  content:"NODUS"!important;
+  position:absolute!important;
+  left:50%!important;
+  top:50%!important;
+  transform:translate(-50%,-50%)!important;
+  color:#ff6900!important;
+  font:700 12px Arial,sans-serif!important;
+  letter-spacing:5px!important;
+  opacity:.78!important;
+}
+.controller.edit.ds4 .touchpad.pressed{
+  border-color:#ff6900!important;
+  box-shadow:0 0 18px rgba(255,105,0,.4),inset 0 0 22px #000!important;
+}
+
+/* Share / Options */
+.controller.edit.ds4 .back,
+.controller.edit.ds4 .start{
+  background:#090909!important;
+  border:2px solid #303030!important;
+  border-radius:9px!important;
+  box-sizing:border-box!important;
+}
+.controller.edit.ds4 .back.pressed,
+.controller.edit.ds4 .start.pressed{
+  border-color:#ff6900!important;
+  box-shadow:0 0 13px rgba(255,105,0,.65)!important;
+}
+
+/* PS button */
+.controller.edit.ds4 .meta{
+  background:#090909!important;
+  border:2px solid #303030!important;
+  border-radius:50%!important;
+  box-sizing:border-box!important;
+}
+.controller.edit.ds4 .meta:after{
+  content:"N"!important;
+  position:absolute!important;
+  inset:0!important;
+  display:grid!important;
+  place-items:center!important;
+  color:#ff6900!important;
+  font:800 15px Arial,sans-serif!important;
+}
+.controller.edit.ds4 .meta.pressed{
+  border-color:#ff6900!important;
+  box-shadow:0 0 18px rgba(255,105,0,.8)!important;
+}
+
+/* Face buttons. Positions stay native. */
+.controller.edit.ds4 .button{
+  background:#090909!important;
+  border:3px solid #ff6900!important;
+  border-radius:50%!important;
+  box-sizing:border-box!important;
+  color:#f4f4f4!important;
+}
+.controller.edit.ds4 .button.pressed{
+  background:#ff6900!important;
+  border-color:#ff9d45!important;
+  color:#080808!important;
+  box-shadow:0 0 20px rgba(255,105,0,.9)!important;
+}
+
+/* D-pad. Positions stay native. */
+.controller.edit.ds4 .face{
+  background:#090909!important;
+  border:2px solid #333!important;
+  box-sizing:border-box!important;
+}
+.controller.edit.ds4 .face.pressed{
+  background:#ff6900!important;
+  border-color:#ff9d45!important;
+  box-shadow:0 0 15px rgba(255,105,0,.8)!important;
+}
+
+/* Sticks. Native stick movement remains intact. */
+.controller.edit.ds4 .stick{
+  background:radial-gradient(circle at 38% 30%,#303030,#090909 68%)!important;
+  border:4px solid #ff6900!important;
+  border-radius:50%!important;
+  box-sizing:border-box!important;
+}
+.controller.edit.ds4 .stick.pressed{
+  border-color:#ff9d45!important;
+  box-shadow:0 0 18px rgba(255,105,0,.8)!important;
+}
+
+.controller.edit.ds4 .wheel{display:none!important}
