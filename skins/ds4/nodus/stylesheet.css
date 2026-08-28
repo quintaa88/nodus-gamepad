@@ -1,0 +1,49 @@
+/* NODUS // DUALSHOCK 4 // GAMEPAD VIEWER
+   Full skin using the native GPV DS4 geometry and state classes.
+   Based on the real DS4 skin layout used by gpv-skins.
+*/
+html,body{background:transparent!important;margin:0!important;padding:0!important;overflow:hidden!important}
+.controller.ds4{
+  width:806px!important;height:599px!important;
+  position:relative!important;
+  background:url("./assets/base.svg") center/806px 599px no-repeat!important;
+  margin-left:-403px!important;margin-top:-299px!important;
+}
+.ds4.disconnected{background:url("./assets/base.svg") center/806px 599px no-repeat!important}
+.ds4.disconnected div{display:none}
+.ds4 .triggers{width:588px;height:90px;position:absolute;left:109px;top:18px}
+.ds4 .trigger{width:99px;height:100%;background:linear-gradient(#121212,#080808);border:2px solid #ff6900;border-radius:28px 28px 12px 12px;opacity:0;box-sizing:border-box}
+.ds4 .trigger.left{float:left}.ds4 .trigger.right{float:right}
+.ds4 .trigger.pressed{opacity:1;box-shadow:0 0 14px rgba(255,105,0,.65),inset 0 0 14px rgba(255,105,0,.12)}
+.ds4 .bumpers{position:absolute;width:588px;height:23px;left:109px;top:92px}
+.ds4 .bumper{width:99px;height:23px;background:#0a0a0a;border:2px solid #353535;border-radius:8px;opacity:1;box-sizing:border-box}
+.ds4 .bumper.left{float:left}.ds4 .bumper.right{float:right}
+.ds4 .bumper.pressed{border-color:#ff6900;box-shadow:0 0 12px rgba(255,105,0,.65)}
+.ds4 .touchpad{width:262px;height:151px;position:absolute;left:272px;top:122px;border-radius:16px;background:linear-gradient(145deg,#151515,#070707);border:2px solid #292929;box-shadow:inset 0 0 22px #000}
+.ds4 .touchpad:after{content:"NODUS";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#ff6900;font:700 12px Arial,sans-serif;letter-spacing:5px;opacity:.78}
+.ds4 .touchpad.pressed{border-color:#ff6900;box-shadow:0 0 18px rgba(255,105,0,.35),inset 0 0 22px #000}
+.ds4 .meta{width:42px;height:42px;position:absolute;left:382px;bottom:216px;border-radius:50%;background:#090909;border:2px solid #ff6900;box-shadow:0 0 6px rgba(255,105,0,.25)}
+.ds4 .meta:after{content:"";position:absolute;inset:9px;border:2px solid #f4f4f4;border-radius:45% 45% 55% 55%;opacity:.9}
+.ds4 .meta.pressed{box-shadow:0 0 18px rgba(255,105,0,.8);background:#ff6900}
+.ds4 .meta.pressed:after{border-color:#050505}
+.ds4 .arrows{position:absolute;width:345px;height:46px;top:131.7px;left:230px}
+.ds4 .back,.ds4 .start{background:#0a0a0a;width:28px;height:46px;border:2px solid #303030;border-radius:9px;opacity:1;box-sizing:border-box}
+.ds4 .back{float:left}.ds4 .start{float:right}
+.ds4 .back.pressed,.ds4 .start.pressed{border-color:#ff6900;box-shadow:0 0 12px rgba(255,105,0,.55);background:#ff6900}
+.ds4 .abxy{position:absolute;width:170px;height:171px;top:159px;left:567px}
+.ds4 .button{position:absolute;width:55px;height:55px;background:#090909;border:3px solid #ff6900;border-radius:100%;box-sizing:border-box;color:#f4f4f4;font:700 22px Arial,sans-serif;text-align:center;line-height:49px;box-shadow:0 0 7px rgba(255,105,0,.2)}
+.ds4 .button:after{position:absolute;inset:0}
+.ds4 .a{bottom:2.3px;left:57.1px}.ds4 .b{top:58px;right:2px}.ds4 .x{left:1.7px;top:57.4px}.ds4 .y{top:1.6px;left:56.8px}
+.ds4 .a:after{content:"✕"}.ds4 .b:after{content:"○"}.ds4 .x:after{content:"□"}.ds4 .y:after{content:"△"}
+.ds4 .button.pressed{background:#ff6900;color:#050505;box-shadow:0 0 20px rgba(255,105,0,.9);transform:scale(.96)}
+.ds4 .sticks{position:absolute;width:341px;height:105px;top:308px;left:237.5px}
+.ds4 .stick{position:absolute;height:94px;width:94px;border-radius:50%;background:radial-gradient(circle at 38% 32%,#303030,#090909 66%);border:4px solid #ff6900;box-sizing:border-box;box-shadow:0 0 7px rgba(255,105,0,.25),inset 0 0 13px #000}
+.ds4 .stick.left{top:0;left:0}.ds4 .stick.right{top:calc(100% - 105px);left:calc(100% - 105px)}
+.ds4 .stick.pressed{border-color:#ff9d45;box-shadow:0 0 18px rgba(255,105,0,.8),inset 0 0 14px #000}
+.ds4 .dpad{position:absolute;width:125px;height:126px;top:181px;left:92px}
+.ds4 .face{position:absolute;background:#0a0a0a;border:2px solid #353535;box-sizing:border-box}
+.ds4 .face.up,.ds4 .face.down{width:36px;height:52px}.ds4 .face.left,.ds4 .face.right{width:52px;height:36px}
+.ds4 .face.up{left:44px;top:-5px;border-radius:9px 9px 3px 3px}.ds4 .face.down{left:44px;bottom:-4px;border-radius:3px 3px 9px 9px}
+.ds4 .face.left{top:45px;left:-5px;border-radius:9px 3px 3px 9px}.ds4 .face.right{top:45px;right:-4px;border-radius:3px 9px 9px 3px}
+.ds4 .face.pressed{background:#ff6900;border-color:#ff9a42;box-shadow:0 0 14px rgba(255,105,0,.75)}
+.ds4.half{margin-top:-300px}
